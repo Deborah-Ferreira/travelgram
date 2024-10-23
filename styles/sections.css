@@ -33,6 +33,15 @@
         padding-left: 2.5rem;
     }
 } 
+.galleryPhoto{  
+    gap: 1rem;   
+    padding-inline: var(--px-base); 
+    padding-block: var(--py-lg);    
+    background-color: var(--skeleton-color); 
+    & img {  
+        max-width: 100%; 
+    }
+} 
 @media (width >= 80em) {
     & .about { 
         flex-direction: row;
@@ -46,4 +55,11 @@
         flex-direction: row; 
         max-width: 37rem;
     }  
+    & .galleryPhoto{   
+        grid-template-columns: repeat(4, 1fr);  
+        gap: 1.5rem;    
+        & img {  
+            max-width: 100%;
+        }
+    }
 } 
