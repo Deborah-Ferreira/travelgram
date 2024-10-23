@@ -1,0 +1,28 @@
+footer {  
+    padding-block: var(--py-lg);  
+    line-height: 150%; 
+    background-color: var(--background-color);  
+    & div { 
+        flex-direction: column; 
+        align-items: center;   
+        gap: var(--py-lg);
+    }
+    & div:nth-child(2) {    
+        display: flex;
+        flex-direction: row; 
+    }
+}
+@media(width >= 80em) {
+    & footer {  
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-inline: var(--px-base); 
+        & div { 
+            flex-direction: row;  
+        }
+        & div:nth-child(2) {
+            margin-left: auto;
+        }
+    }
+}
