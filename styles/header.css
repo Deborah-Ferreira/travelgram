@@ -1,0 +1,18 @@
+header { 
+    padding: var(--px-base); 
+    background-color: var(--surface-color);     
+}  
+a:nth-child(1){
+    --bg-img: "";
+    background: var(--bg-img);  
+    --bg-img: url(../assets/icons/MagnifyingGlass.svg) no-repeat center/1.5rem;
+    padding: 1.5rem;
+    &:hover {
+        --bg-img: url(../assets/icons/MagnifyingGlass-hover.svg) no-repeat center/1.5rem;
+        padding: 1.5rem;
+    }
+} 
+.profile {  
+    background: url(../assets/profile.svg) no-repeat center/2.5rem; 
+    padding: 1.25rem; 
+}    
